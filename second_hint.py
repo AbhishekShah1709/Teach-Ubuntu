@@ -6,6 +6,8 @@ def get_second_hint(cmd):
         print("'cp' command can be used here")
     elif cmd=="diff":
         print("'diff' command can be used here along with piping operation")
+    elif cmd=="grep":
+        print("'grep' command can be used here along with piping operation")
     elif cmd=="wc":
         print("'wc' command can be used here")
     elif cmd=="chmod":
@@ -32,3 +34,15 @@ def get_second_hint(cmd):
         print("'chattr' command can be used here and 'lsattr' command can be used to get the flag")
     elif cmd=="ifconfig":
         print("'ifconfig' command can be used here with some flag")
+    elif cmd=="rm":
+        print("'rm' command can be used here with some flag")
+    elif cmd=="mv":
+        print("'mv' command can be used here with some flag")
+    elif cmd=="pwd":
+        print("'pwd' command can be used here")
+    elif cmd=="tail":
+        print("'tail' command can be used here with multiple piping operations")
+    elif cmd=="touch":
+        print("'touch' command can be used here with some flag")
+    elif cmd=="whoami":
+        print("'whoami' command can be used here")

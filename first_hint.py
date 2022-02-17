@@ -3,32 +3,46 @@ def get_first_hint(cmd):
     if cmd=="ls":
         print("List all files and count it")
     elif cmd=="cp":
-        print("Copy ")
+        print("")
     elif cmd=="diff":
-        print("'diff' command can be used here along with piping operation")
+        print("Try to think of a command which could help you compare the content of two files")
+    elif cmd=="grep":
+        print("Try to think of a command which could help you find a word inside a file")
     elif cmd=="wc":
-        print("'wc' command can be used here")
+        print("Get the count statistics of the given file and find the sum")
     elif cmd=="chmod":
-        print("'chmod' command can be used here")
+        print("The permission for a file or a folder in a Unix-like operating system is represented by ---------- (10 '-'). Try to learn what each - represents.")
     elif cmd=="piping":
-        print("Use piping along with head and wc command")
+        print("You need to send the output of one command as an input to another command. Think what can be used!")
     elif cmd=="redirect":
-        print("Use redirection along with piping and ls command")
+        print("You need to divert the output of a command to a file. Think what can be used!")
     elif cmd=="uname":
-        print("'uname' command can be used here with some flags")
+        print("Try to think of a command which could get such information about your system.")
     elif cmd=="md5sum":
-        print("'md5sum' command can be used here")
+        print("Try to get md5 fingerprints for each file in fingerprints1.txt")
     elif cmd=="sha256sum":
-        print("'sha256sum' command can be used here")
+        print("Try to get sha256 fingerprints for each file in fingerprints2.txt")
     elif cmd=="uid":
-        print("'id' command can be used here with some flag")
+        print("First try to get both user and group IDs and then use a flag to filter out only group IDs")
     elif cmd=="gzip":
-        print("'gzip' command can be used here with some flag")
+        print("Try to think of a command which could unzip a file through terminal")
     elif cmd=="zgrep":
-        print("'zgrep' command can be used here")
+        print("We learned 'grep' can be used to find a word inside a file. Can something similar be used to find a word inside a compressed file?")
     elif cmd=="ln":
-        print("'ln' command can be used here")
+        print("Lookup which command can be used for establishing links between files. For better clarity, also check out the difference between links of a file and copy command")
     elif cmd=="chattr":
-        print("'chattr' command can be used here and 'lsattr' command can be used to get the flag")
+        print("The attributes of a file in Unix-like system is represented by -------------e-- (16 '-'). Try to learn what each - represents and how can we change modes of a files.")
     elif cmd=="ifconfig":
-        print("'ifconfig' command can be used here with some flag")
+        print("First get a list of all interfaces and then use a flag to get the short list.")
+    elif cmd=="rm":
+        print("")
+    elif cmd=="mv":
+        print("")
+    elif cmd=="pwd":
+        print("Think of a command which can give you the absolute path")
+    elif cmd=="tail":
+        print("First try to get the content of the whole file and then use some command to get only the last lines. Counting occurences can be done further considering the filtered text as new content.")
+    elif cmd=="touch":
+        print("")
+    elif cmd=="whoami":
+        print("Think of a command which can list out the username")

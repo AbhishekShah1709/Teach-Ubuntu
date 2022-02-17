@@ -1,11 +1,14 @@
 def get_third_hint(cmd):
 
     if cmd=="ls":
-        print("Write the command 'ls' and count the number of files and folder")
+#        print("Write the command 'ls' and count the number of files and folder")
+        print("Write the command 'ls | cat -n'")
     elif cmd=="cp":
         print("Write the command 'cp a a_dup.txt'")
     elif cmd=="diff":
         print("Write the command 'diff a.txt b.txt | grep \"^>\" | wc -l'")
+    elif cmd=="grep":
+        print("Write the command 'grep Hello c.txt | wc -l'")
     elif cmd=="wc":
         print("Write the command 'wc a.txt' and count the sum of the three numbers")
     elif cmd=="chmod":
@@ -32,3 +35,15 @@ def get_third_hint(cmd):
         print("Write the command 'chattr +a e.txt; lsattr e.txt'")
     elif cmd=="ifconfig":
         print("Write the command 'ifconfig -s | wc -l' and subtract 1 from this number for headers")
+    elif cmd=="rm":
+        print("")
+    elif cmd=="mv":
+        print("")
+    elif cmd=="pwd":
+        print("Write the command 'pwd' and submit it as a flag")
+    elif cmd=="tail":
+        print("Write the command 'cat tail.txt | tail -50 | grep __FLAG__ -o -i | wc -l' to get the required value")
+    elif cmd=="touch":
+        print("")
+    elif cmd=="whoami":
+        print("Write the command 'whoami' and submit it as a flag")

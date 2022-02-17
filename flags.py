@@ -20,6 +20,12 @@ def get_flag(cmd):
         
         return corr_output.decode('utf-8')
 
+    if cmd=="grep":
+        corr_cmd = subprocess.Popen(("grep Hello c.txt | wc -l"), stdout=subprocess.PIPE, shell=True)
+        corr_output = corr_cmd.communicate()[0]
+        
+        return corr_output.decode('utf-8')
+
     if cmd=="wc":
         corr_cmd = subprocess.Popen(("wc a.txt"), stdout=subprocess.PIPE, shell=True)
         corr_output = corr_cmd.communicate()[0]
@@ -97,6 +103,30 @@ def get_flag(cmd):
         corr_output = corr_cmd.communicate()[0]
 
         val = corr_output.decode('utf-8') - 1
+        
+        return val
+
+    if cmd=="pwd":
+        corr_cmd = subprocess.Popen(("pwd"), stdout=subprocess.PIPE, shell=True)
+        corr_output = corr_cmd.communicate()[0]
+
+        val = corr_output.decode('utf-8')
+
+        return val
+
+    if cmd=="tail":
+        corr_cmd = subprocess.Popen(("cat tail.txt | tail -50 | grep '__FLAG__' -o -i | wc -l"), stdout=subprocess.PIPE, shell=True)
+        corr_output = corr_cmd.communicate()[0]
+
+        val = corr_output.decode('utf-8') - 1
+        
+        return val
+
+    if cmd=="whoami":
+        corr_cmd = subprocess.Popen(("whoami"), stdout=subprocess.PIPE, shell=True)
+        corr_output = corr_cmd.communicate()[0]
+
+        val = corr_output.decode('utf-8')
         
         return val
 

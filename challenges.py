@@ -34,10 +34,10 @@ def print_challenge(cmd):
         print("CHALLENGE: Get the network host nodename and the kernel name for your system and submit that as the flag!")
     
     elif cmd=="md5sum":
-        print("CHALLENGE: Check if the fingerprints for all python files match with the ones given in fingerprints1.txt. The number of files for which the fingerprints differ is the flag!")
+        print("CHALLENGE: Check if the md5 fingerprints for all python files match with the ones given in fingerprints1.txt. The number of files for which the fingerprints differ is the flag!")
     
     elif cmd=="sha256sum":
-        print("CHALLENGE: Check if the fingerprints for all python files match with the ones given in fingerprints2.txt. The number of files for which the fingerprints differ is the flag!")
+        print("CHALLENGE: Check if the sha256 fingerprints for all python files match with the ones given in fingerprints2.txt. The number of files for which the fingerprints differ is the flag!")
     
     elif cmd=="uid":
         print("CHALLENGE: Get a list of all group ID associated with the user. The sum of all those ID's is the flag!")
@@ -56,6 +56,25 @@ def print_challenge(cmd):
     
     elif cmd=="ifconfig":
         print("CHALLENGE: Display a short list of interfaces available. The number of interfaces in the list displayed is the flag!")
+
+    elif cmd=="rm":
+        print("CHALLENGE: ")
+
+    elif cmd=="mv":
+        print("CHALLENGE: ")
+
+    elif cmd=="pwd":
+        print("CHALLENGE: Get the absolute path for the current directory you are in and use it as the flag!")
+
+    elif cmd=="tail":
+        print("CHALLENGE: Get the last 50 lines of the file tail.txt and count the occurence of the word __FLAG__ in it. The value is the flag!")
+
+    elif cmd=="touch":
+        print("CHALLENGE: ")
+
+    elif cmd=="whoami":
+        print("CHALLENGE: Print the user name associated with the current effective user ID and use it as a flag!")
+
 
 def get_challenge(cmd):
 
@@ -90,6 +109,6 @@ def get_challenge(cmd):
                 print("TRY AGAIN!")
                 print()
         else:
-            execute_cmd(cmd, usr_input)
+            execute_cmd(usr_input)
 
     return

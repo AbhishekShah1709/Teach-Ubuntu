@@ -1,0 +1,10 @@
+adduser
+find file attr
+Man
+Mv rename
+Nano
+Passwd
+Rm
+Su
+Sudo
+Touch

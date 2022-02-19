@@ -1,4 +1,3 @@
-from general import execute_cmd
 from first_hint import get_first_hint
 from second_hint import get_second_hint
 from third_hint import get_third_hint

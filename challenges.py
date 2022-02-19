@@ -79,36 +79,36 @@ def print_challenge(cmd):
 def get_challenge(cmd):
 
     print_challenge(cmd)
-    hint_cnt = 0
-    
-    print()
-    while True:
-        usr_input = input("-> ")
-        if usr_input.split(" ")[0]=="hintme":
-            hint_cnt += 1
-            if hint_cnt==1:
-                get_first_hint(cmd)
-            elif hint_cnt==2:
-                get_second_hint(cmd)
-            elif hint_cnt==3:
-                get_third_hint(cmd)
-            else:
-                print("No more hints allowed!")
-
-        elif usr_input.split(" ")[0]=="submit":
-            usr_flag = usr_input.split(" ")[1]
-            corr_flag = get_flag(cmd)
-
-            if usr_flag.strip()==corr_flag.strip():
-                print()
-                print("CONGRATULATIONS! YOU HAVE MASTERED THIS COMMAND")
-                print()
-                break
-            else:
-                print()
-                print("TRY AGAIN!")
-                print()
-        else:
-            execute_cmd(usr_input)
-
+#    hint_cnt = 0
+#    
+#    print()
+#    while True:
+#        usr_input = input("-> ")
+#        if usr_input.split(" ")[0]=="hintme":
+#            hint_cnt += 1
+#            if hint_cnt==1:
+#                get_first_hint(cmd)
+#            elif hint_cnt==2:
+#                get_second_hint(cmd)
+#            elif hint_cnt==3:
+#                get_third_hint(cmd)
+#            else:
+#                print("No more hints allowed!")
+#
+#        elif usr_input.split(" ")[0]=="submit":
+#            usr_flag = usr_input.split(" ")[1]
+#            corr_flag = get_flag(cmd)
+#
+#            if usr_flag.strip()==corr_flag.strip():
+#                print()
+#                print("CONGRATULATIONS! YOU HAVE MASTERED THIS COMMAND")
+#                print()
+#                break
+#            else:
+#                print()
+#                print("TRY AGAIN!")
+#                print()
+#        else:
+#            execute_cmd(usr_input)
+#
     return

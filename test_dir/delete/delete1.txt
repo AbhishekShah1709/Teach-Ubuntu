@@ -1,0 +1,6 @@
+The Linux console provides a way for the kernel and other processes to output text-based messages to the user, and to receive text-based input from the user. In Linux, several devices can be used as system console: a virtual terminal,[9] serial port,[10] USB serial port,[11] VGA in text-mode,[12] framebuffer.
+Some modern Linux-based systems have deprecated kernel based text-mode input and output, and instead show a graphical logo or progress bar while the system is booting, followed by the immediate start of a graphical user interface (e.g. the X.Org Server on desktop distributions, or SurfaceFlinger on Android).
+
+During kernel boot, the console is commonly used to display the boot log of the kernel. 
+The boot log includes information about detected hardware, and updates on the status of the boot procedure.
+At this point in time, the kernel is the only software running, and hence logging via user-space (e.g. syslog) is not possible, so the console provides a convenient place to output this information. Once the kernel has finished booting, it runs the init process (also sending output to the console), which handles booting of the rest of the system including starting any background daemons.

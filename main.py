@@ -1,109 +1,75 @@
-from info import get_info
-from challenges import get_challenge
+from challenges import print_challenge
 from flags import get_flag
 
-#while 1:
+cmd_lst=['ls',
+        'cp',
+        'diff',
+        'grep',
+        'wc',
+        'chmod',
+        'ifconfig',
+        'chattr',
+        'ln',
+        'gzip',
+        'zgrep',
+        'piping',
+        'redirect',
+        'uname',
+        'md5sum',
+        'sha256sum',
+        'uid',
+        'chmod',
+        'rm',
+        'mv',
+        'pwd',
+        'tail',
+        'touch',
+        'whoami',
+        'man',
+        'nano',
+        'sudo']
+
+f = open('./solved.txt','r+')
+content = f.read()
+f.close()
+
+solved_cmd = set()
+
+for line in content.split("\n"):
+    solved_cmd.add(line)
+
+cmd_idx = {}
 
 print("Enter the number corresponding to the commmand you want to test yourself on: ")
 print()
 print("*********************************************************")
-print("1: ls")
-print("2: cp")
-print("3: diff")
-print("4: grep")
-print("5: wc")
-print("6: chmod")
-print("7: ifconfig")
-print("8: chattr")
-print("9: ln")
-print("10: gzip")
-print("11: zgrep")
-print("12: piping")
-print("13: redirect")
-print("14: uname")
-print("15: md5sum")
-print("16: sha256sum")
-print("17: uid")
-print("18: chmod")
-print("19: rm")
-print("20: mv")
-print("21: pwd")
-print("22: tail")
-print("23: touch")
-print("24: whoami")
+
+cnt=1
+
+for i in range(len(cmd_lst)):
+    if cmd_lst[i] not in solved_cmd:
+        print(cnt, end=": ")
+        print(cmd_lst[i])
+        cmd_idx[cnt] = cmd_lst[i]
+        cnt+=1
+
 print()
 print("Enter quit to EXIT")
 print("*********************************************************")
 
 usr_choice = input("Input your choice: ")
 
-if usr_choice=="1":
-    get_info("ls")
-    get_challenge("ls")
+idx_keys = []
+for key in cmd_idx.keys():
+    idx_keys.append(str(key))
 
-if usr_choice=="2":
-    get_info("ls")
-    get_challenge("ls")
+if usr_choice=="quit": 
+    exit(0)
+    
+elif usr_choice in idx_keys:
+    print_challenge(cmd_idx[int(usr_choice)])
 
-if usr_choice=="3":
-    get_info("diff")
-    get_challenge("diff")
+else:
+    print()
+    print("Please give correct input!")
 
-if usr_choice=="4":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="5":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="6":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="7":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="8":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="9":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="10":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="11":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="12":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="13":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="14":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="15":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="16":
-    get_info("ls")
-    get_challenge("ls")
-
-if usr_choice=="17":
-    get_info("chmod")
-    get_challenge("chmod")
-
-if usr_choice=="quit":
-   exit(0) 

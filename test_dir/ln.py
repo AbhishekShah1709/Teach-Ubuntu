@@ -1,0 +1,1 @@
+print("__THIS_IS_THE_FLAG_FOR_LN_COMMAND__")

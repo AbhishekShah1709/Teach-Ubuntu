@@ -1,0 +1,7 @@
+After the init boot process is complete, the console will be used to multiplex multiple virtual terminals (accessible by pressing Ctrl-Alt-F1, Ctrl-Alt-F2 etc., Ctrl-Alt-LeftArrow, Ctrl-Alt-RightArrow, or using chvt[14]). On each virtual terminal, a getty process is run, which in turn runs /bin/login to authenticate a user. After authentication, a command shell will be run. Virtual terminals, like the console, are supported at the Linux kernel level.[15]
+
+The Linux console implements a terminal type of "linux" and the escape sequences it uses are in the console_codes man page.[16]
+
+Virtual consoles allow the storage of multiple text buffers, enabling different console programs to run simultaneously but interact with the user in different contexts. From the user's point of view, this creates the illusion of several independent consoles.
+
+Each virtual console can have its own character set and keyboard layout. Linux 2.6 introduced the ability to load a different font for each virtual console (kernel versions predating 2.6 change the font only on demand).

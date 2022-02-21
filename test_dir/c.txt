@@ -1,0 +1,19 @@
+A "Hello, World!" program is generally a computer program that outputs or displays the message "Hello, World!".
+This program is very simple to write in many programming languages, and is often used to illustrate a language's basic syntax.
+"Hello, World!" programs are often the first a student learns to write in a given language,[1] and they can also be used as a sanity test to ensure computer software intended to compile or run source code is correctly installed, and that its operator understands how to use it.
+While small test programs have existed since the development of programmable computers, the tradition of using the phrase "Hello, World!" as a test message was influenced by an example program in the seminal 1978 book The C Programming Language.
+The example program in that book prints "hello, world", and was inherited from a 1974 Bell Laboratories internal memorandum by Brian Kernighan, Programming in C: A Tutorial.
+
+main( ) {
+        printf("hello, world");
+}
+
+In the above example, the main( ) function defines where the program should start executing.
+The function body consists of a single statement, a call to the printf function, which stands for "print formatted".
+This function will cause the program to output whatever is passed to it as the parameter, in this case the string hello, world.
+The program also prints hello, world! on the terminal, including a newline character.
+The phrase is divided into multiple variables because in B, a character constant is limited to four ASCII characters.
+The previous example in the tutorial printed hi! on the terminal, and the phrase hello,  world! was introduced as a slightly longer greeting that required several character constants for its expression.
+The Jargon File claims that "Hello, World!" originated instead with BCPL (1967).
+This claim is supposedly supported by the archived notes of the inventors of BCPL, Brian Kernighan at Princeton and Martin Richards at Cambridge.
+The phrase predated by over a decade its usage in computing; as early as the 1950s, it was the catchphrase of radio disc jockey William B. Williams.

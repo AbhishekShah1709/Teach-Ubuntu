@@ -3,7 +3,7 @@ def get_first_hint(cmd):
     if cmd=="ls":
         print("List all files and count it")
     elif cmd=="cp":
-        print("")
+        print("Copy exact content of one file to another using some terminal command")
     elif cmd=="diff":
         print("Try to think of a command which could help you compare the content of two files")
     elif cmd=="grep":
@@ -25,7 +25,7 @@ def get_first_hint(cmd):
     elif cmd=="uid":
         print("First try to get both user and group IDs and then use a flag to filter out only group IDs")
     elif cmd=="gzip":
-        print("Try to think of a command which could unzip a file through terminal")
+        print("Try to think of a command which could unzip a .gz file through terminal")
     elif cmd=="zgrep":
         print("We learned 'grep' can be used to find a word inside a file. Can something similar be used to find a word inside a compressed file?")
     elif cmd=="ln":
@@ -35,14 +35,18 @@ def get_first_hint(cmd):
     elif cmd=="ifconfig":
         print("First get a list of all interfaces and then use a flag to get the short list.")
     elif cmd=="rm":
-        print("")
+        print("Check which command can be used to remove a folder containing files inside it!")
     elif cmd=="mv":
-        print("")
+        print("Moving a file is same as renaming the file in that folder.")
     elif cmd=="pwd":
         print("Think of a command which can give you the absolute path")
     elif cmd=="tail":
         print("First try to get the content of the whole file and then use some command to get only the last lines. Counting occurences can be done further considering the filtered text as new content.")
-    elif cmd=="touch":
-        print("")
     elif cmd=="whoami":
         print("Think of a command which can list out the username")
+    elif cmd=="man":
+        print("Use a command to get the manual page for the given command")
+    elif cmd=="nano":
+        print("Open some editor to add this line to the file")
+    elif cmd=="sudo":
+        print("Don't have the permission to access the file? Can you take the root access to open the file?")

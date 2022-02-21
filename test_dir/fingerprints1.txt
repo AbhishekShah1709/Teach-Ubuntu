@@ -1,0 +1,8 @@
+52df4b403bd0972c1339ef682b9b142b  ../challenges.py
+8ce24949d2b2fdcdf74933fb6b16427b  ../first_hint.py
+c284fcda679e4baa968a40eb066ee0d6  ../flags.py
+eade4b82b344433e315d350193bb2dcc  ../hintme.py
+52b7c5f739d788e31f7507ee4229d453  ../main.py
+1a51d8f039b56e69e720cd733001b023  ../second_hint.py
+f1f7a331820d455084c6b27eaeaca479  ../submit.py
+3b90b0db0f9d8a25b5dcd6246023dde2  ../third_hint.py

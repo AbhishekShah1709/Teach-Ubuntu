@@ -1,0 +1,9 @@
+In a nutshell, computer science degrees deal with the theoretical foundations of information and computation, taking a scientific and practical approach to computation and its applications.
+Computation is defined as any type of calculation or use of computing technology that follows well-defined models (such as algorithms and protocols) in the practice of information processing (which in turn is defined as the use of these models to transform data in computers).
+Computer science is considered by many of its practitioners to be a foundational science - one which makes other knowledge and achievements possible.
+The study of computer science involves systematically studying methodical processes (such as algorithms) in order to aid the acquisition, representation, processing, storage, communication of, and access to information. 
+This is done by analyzing the feasibility, structure, expression and mechanization of these processes and how they relate to this information.
+In computer science, the term ‘information’ refers usually to information which is encoded in bits and bytes in computer memory.
+Some higher education institutions may use computer science (CS) as an umbrella term to cover various specialist and vocational degrees involving computers and technology.
+You may also find the term computer science being used to refer to information technology (IT) degrees, although many institutions now distinguish between the two (exactly how and where they draw this line varies).
+This is the last line of the file. Delete this line.

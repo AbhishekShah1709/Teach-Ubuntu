@@ -42,7 +42,11 @@ def get_second_hint(cmd):
         print("'pwd' command can be used here")
     elif cmd=="tail":
         print("'tail' command can be used here with multiple piping operations")
-    elif cmd=="touch":
-        print("'touch' command can be used here with some flag")
     elif cmd=="whoami":
         print("'whoami' command can be used here")
+    elif cmd=="man":
+        print("'man' command can be used here")
+    elif cmd=="nano":
+        print("'nano' command can be used here")
+    elif cmd=="sudo":
+        print("'sudo' command can be used here")
